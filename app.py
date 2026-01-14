@@ -79,8 +79,8 @@ st.markdown("<h1>🎬 Movie Recommender System</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align:center;color:#cbd5e1;'>Discover movies similar to your favorites</p>", unsafe_allow_html=True)
 
 # ---------------- LOAD DATA ----------------
-movies = pickle.load(open('model/movie_list.pkl', 'rb'))
-similarity = pickle.load(open('model/similarity.pkl', 'rb'))
+movies = pickle.load(open('movie_list.pkl', 'rb'))
+similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 movie_list = movies['title'].values
 
@@ -116,3 +116,4 @@ Made with ❤️ using Machine Learning & Streamlit<br>
 Dataset: TMDB
 </p>
 """, unsafe_allow_html=True)
+
